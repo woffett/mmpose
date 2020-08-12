@@ -14,7 +14,7 @@ from .topdown_base_dataset import TopDownBaseDataset
 def _get_mapping_id_name(imgs):
     """
     Args:
-        imgs (list): list of image info.
+        imgs (dict): dict of image info.
     Returns:
         id2name (dict): mapping image id to name.
         name2id (dict): mapping image name to id.
