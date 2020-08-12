@@ -21,9 +21,8 @@ def _get_mapping_id_name(imgs):
     """
     id2name = {}
     name2id = {}
-    for image in imgs:
+    for image_id, image in imgs.items():
         file_name = image['file_name']
-        image_id = image['id']
         id2name[image_id] = file_name
         name2id[file_name] = image_id
 
