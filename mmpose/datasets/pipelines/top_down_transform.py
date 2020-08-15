@@ -178,7 +178,7 @@ class TopDownAffine():
         joints_3d_visible = results['joints_3d_visible']
         c = results['center']
         s = results['scale']
-        r = results['rotation']
+        r = results['rotation'] if 'rotation' in results else 0.0
         trans = get_affine_transform(c, s, r, image_size)
 
         img = cv2.warpAffine(

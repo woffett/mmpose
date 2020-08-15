@@ -158,6 +158,7 @@ def _inference_single_pose_model(model, img_or_path, bbox):
         'img_or_path': img_or_path,
         'center': center,
         'scale': scale,
+        'rotation': 0,
         'bbox_score': bbox[4] if len(bbox) == 5 else 1,
         'dataset': 'coco',
         'joints_3d': np.zeros((cfg.data_cfg.num_joints, 3), dtype=np.float),
